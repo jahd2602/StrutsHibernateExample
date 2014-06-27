@@ -1,0 +1,1 @@
+CREATE TABLE contacto (id INT NOT NULL AUTO_INCREMENT, nombre VARCHAR(50), direccion VARCHAR(50), telefono VARCHAR(50), correo VARCHAR(50), PRIMARY KEY (id));
