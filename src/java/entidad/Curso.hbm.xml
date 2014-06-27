@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 26-jun-2014 20:41:30 by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+    <class name="entidad.Curso" table="curso" catalog="bd">
+        <id name="curNrc" type="int">
+            <column name="cur_nrc" />
+            <generator class="assigned"></generator>
+        </id>
+        <property name="curNombre" type="string">
+            <column name="cur_nombre" length="45" not-null="true" />
+        </property>
+        <property name="curSemestre" type="string">
+            <column name="cur_semestre" length="45" not-null="true" />
+        </property>
+        <property name="curDuracion" type="string">
+            <column name="cur_duracion" length="45" not-null="true" />
+        </property>
+    </class>
+</hibernate-mapping>

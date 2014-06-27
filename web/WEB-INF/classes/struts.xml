@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts  
+Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd"> 
+
+<struts>
+    <constant name="struts.devMode" value="true" />
+
+    <package name="default" namespace="/" extends="struts-default">
+        <action name="curso" class="acciones.CursoAction">
+            <result name="input">curso/Formulario.jsp</result>
+            <result name="ok">curso/Mensaje.jsp</result>
+            <result>curso/Listar.jsp</result>
+        </action>
+        <action name="cursoSave" class="acciones.CursoAction" method="save">
+            <result name="input">curso/Formulario.jsp</result>
+            <result name="ok">curso/Mensaje.jsp</result>
+            <result>curso/Listar.jsp</result>
+        </action>
+        <action name="cursoInput" class="acciones.CursoAction" method="input">
+            <result name="input">curso/Formulario.jsp</result>
+            <result name="ok">curso/Mensaje.jsp</result>
+            <result>curso/Listar.jsp</result>
+        </action>
+        <action name="cursoRemove" class="acciones.CursoAction" method="remove">
+            <result name="input">curso/Formulario.jsp</result>
+            <result name="ok">curso/Mensaje.jsp</result>
+            <result>curso/Listar.jsp</result>
+        </action>
+        <action name="cursoList" class="acciones.CursoAction" method="list">
+            <result name="input">curso/Formulario.jsp</result>
+            <result name="ok">curso/Mensaje.jsp</result>
+            <result>curso/Listar.jsp</result>
+        </action>
+        
+        
+        <action name="contacto" class="acciones.ContactoAction">
+            <result name="input">contacto/Formulario.jsp</result>
+            <result name="ok">contacto/Mensaje.jsp</result>
+            <result>contacto/Listar.jsp</result>
+        </action>
+        <action name="contactoSave" class="acciones.ContactoAction" method="save">
+            <result name="input">contacto/Formulario.jsp</result>
+            <result name="ok">contacto/Mensaje.jsp</result>
+            <result>contacto/Listar.jsp</result>
+        </action>
+        <action name="contactoInput" class="acciones.ContactoAction" method="input">
+            <result name="input">contacto/Formulario.jsp</result>
+            <result name="ok">contacto/Mensaje.jsp</result>
+            <result>contacto/Listar.jsp</result>
+        </action>
+        <action name="contactoRemove" class="acciones.ContactoAction" method="remove">
+            <result name="input">contacto/Formulario.jsp</result>
+            <result name="ok">contacto/Mensaje.jsp</result>
+            <result>contacto/Listar.jsp</result>
+        </action>
+        <action name="contactoList" class="acciones.ContactoAction" method="list">
+            <result name="input">contacto/Formulario.jsp</result>
+            <result name="ok">contacto/Mensaje.jsp</result>
+            <result>contacto/Listar.jsp</result>
+        </action>
+        <action name="contactoSearch" class="acciones.ContactoAction" method="search">
+            <result name="input">contacto/Listar.jsp</result>
+            <result name="ok">contacto/Listar.jsp</result>
+            <result>contacto/Listar.jsp</result>
+        </action>
+    </package>    
+</struts>
